@@ -58,3 +58,136 @@ label {
     font-size: 15px;
     font-weight: bold;
 }
+
+/* Campos */
+input {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 2px solid #dbe1ea;
+    border-radius: 10px;
+
+    background: #f8fafc;
+
+    color: #111827;
+
+    font-size: 16px;
+
+    outline: none;
+
+    transition: 0.3s ease;
+}
+
+input:focus {
+    background: #ffffff;
+
+    border-color: #2563eb;
+
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+}
+
+/* Área dos botões */
+.botoes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 28px;
+}
+
+/* Estilo geral dos botões */
+button {
+    padding: 14px 10px;
+
+    border: none;
+    border-radius: 10px;
+
+    color: white;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Somar */
+button:nth-child(1) {
+    background: #16a34a;
+}
+
+button:nth-child(1):hover {
+    background: #15803d;
+    transform: translateY(-3px);
+}
+
+/* Subtrair */
+button:nth-child(2) {
+    background: #dc2626;
+}
+
+button:nth-child(2):hover {
+    background: #b91c1c;
+    transform: translateY(-3px);
+}
+
+/* Multiplicar */
+button:nth-child(3) {
+    background: #9333ea;
+}
+
+button:nth-child(3):hover {
+    background: #7e22ce;
+    transform: translateY(-3px);
+}
+
+/* Dividir */
+button:nth-child(4) {
+    background: #ea580c;
+}
+
+button:nth-child(4):hover {
+    background: #c2410c;
+    transform: translateY(-3px);
+}
+
+/* Efeito ao clicar */
+button:active {
+    transform: scale(0.96);
+}
+/* Resultado */
+#resultado {
+    margin-top: 28px;
+    padding: 18px;
+
+    border-radius: 10px;
+
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+
+    color: #1e3a8a;
+
+    text-align: center;
+
+    font-size: 19px;
+    font-weight: bold;
+}
+
+/* Responsividade */
+@media (max-width: 450px) {
+
+    .calculadora {
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .botoes {
+        grid-template-columns: 1fr;
+    }
+}
